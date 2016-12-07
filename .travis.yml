@@ -1,0 +1,11 @@
+language: objective-c
+
+osx_image: xcode8.1
+
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+
+script:
+  - set -o pipefail
+  - xcodebuild test -project MatrixSDK.xcodeproj -scheme MatrixSDK -sdk iphonesimulator10.1 -destination "name=iPhone 7" | xcpretty -c
