@@ -7,7 +7,7 @@ before_install:
   - brew install carthage
 
 install:
-  - carthage update
+  - carthage update --platform iOS
 
 script:
   - set -o pipefail
