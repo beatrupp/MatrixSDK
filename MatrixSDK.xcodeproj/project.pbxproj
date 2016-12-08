@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3103543B1DF9896A005DC4D9 /* MXPublicRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */; };
+		3103543D1DF993AB005DC4D9 /* MXPublicRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103543C1DF993AB005DC4D9 /* MXPublicRoom.swift */; };
 		3130A2791DF78AA3002CE90F /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */; };
 		3130A27E1DF78AA3002CE90F /* MatrixSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3130A27D1DF78AA3002CE90F /* MatrixSDKTests.swift */; };
 		3130A2801DF78AA3002CE90F /* MatrixSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3130A2721DF78AA3002CE90F /* MatrixSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPublicRoom.swift; sourceTree = "<group>"; };
+		3103543C1DF993AB005DC4D9 /* MXPublicRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPublicRoom.swift; sourceTree = "<group>"; };
 		3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3130A2721DF78AA3002CE90F /* MatrixSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSDK.h; sourceTree = "<group>"; };
 		3130A2731DF78AA3002CE90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				318A294D1DF7B58900901E6D /* MXCredentialsSpec.swift */,
 				318A294E1DF7B58900901E6D /* MXErrorSpec.swift */,
 				318A294F1DF7B58900901E6D /* MXEventSpec.swift */,
+				3103543C1DF993AB005DC4D9 /* MXPublicRoom.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				318A29541DF7B5C900901E6D /* MXCredentials.swift */,
 				318A29551DF7B5C900901E6D /* MXError.swift */,
 				318A29561DF7B5C900901E6D /* MXEvent.swift */,
+				3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				318A29571DF7B5C900901E6D /* MXCredentials.swift in Sources */,
 				318A29581DF7B5C900901E6D /* MXError.swift in Sources */,
 				318A295B1DF7B5E600901E6D /* MXConstants.swift in Sources */,
+				3103543B1DF9896A005DC4D9 /* MXPublicRoom.swift in Sources */,
 				318A29591DF7B5C900901E6D /* MXEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +304,7 @@
 				3130A27E1DF78AA3002CE90F /* MatrixSDKTests.swift in Sources */,
 				318A29521DF7B58900901E6D /* MXEventSpec.swift in Sources */,
 				318A29501DF7B58900901E6D /* MXCredentialsSpec.swift in Sources */,
+				3103543D1DF993AB005DC4D9 /* MXPublicRoom.swift in Sources */,
 				318A29511DF7B58900901E6D /* MXErrorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

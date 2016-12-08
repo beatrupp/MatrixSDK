@@ -11,21 +11,28 @@ import ObjectMapper
 
 /// Represents the response to a login or a register request
 class MXCredentials: Mappable {
+    // MARK: Properties
     
     /// The home server name
-    var homeserver: String!
+    private(set) var homeserver: String!
     
     /// The obtained user id.
-    var userId: String!
+    private(set) var userId: String!
     
     /// The access token to create a MXRestClient
-    var accessToken: String!
+    private(set) var accessToken: String!
     
     /// The refresh token to create a MXRestClient
-    var refreshToken: String!
+    private(set) var refreshToken: String!
     
     /// The device id.
-    var deviceId: String!
+    private(set) var deviceId: String!
+    
+    /// The server certificate trusted by the user (nil when the server is trusted by the device).
+    private(set) var allowedCertificate: Data?
+    
+    /// The ignored server certificate (set when the user ignores a certificate change).
+    private(set) var ignoredCertificate: Data?
     
     /// Simple MXCredentials construtor
     ///
@@ -43,6 +50,7 @@ class MXCredentials: Mappable {
         self.deviceId = deviceId
     }
     
+    // MARK: Mappable
     required init?(map: Map) {
         if map.JSON["user_id"] == nil, map.JSON["access_token"] == nil {
             return nil
