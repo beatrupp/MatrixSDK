@@ -72,7 +72,7 @@ class MXPublicRoom: Mappable {
     
     /// The display name is computed from available information
     private func updateDisplayName() {
-        if var displayname:String = name {
+        if var displayname: String = name {
             if let _aliases = self.aliases, _aliases.count > 0, !displayname.hasPrefix("#") {
                 displayname = "\(displayname) (\(_aliases[0]))"
             }

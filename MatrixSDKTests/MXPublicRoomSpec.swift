@@ -13,7 +13,7 @@ import ObjectMapper
 @testable import MatrixSDK
 
 class MXPublicRoomSpec: QuickSpec {
-    let data : [String: Any] = [
+    let data: [String: Any] = [
         "canonical_alias": "#gerenal:zboxapp.com",
         "name": "Canal de Todos ZBox / ITLinux",
         "world_readable": false,
@@ -29,7 +29,7 @@ class MXPublicRoomSpec: QuickSpec {
     
     override func spec() {
         describe("MXPublicRoom - Mappable") {
-            it("parse room alias json data to MXPublicRoom") {
+            it("parse room json data to MXPublicRoom") {
                 let room: MXPublicRoom? = Mapper<MXPublicRoom>().map(JSON: self.data)
                 
                 expect(room).notTo(beNil())

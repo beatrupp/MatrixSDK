@@ -39,7 +39,7 @@ class MXError: Mappable {
     
     /// Mappable
     func mapping(map: Map) {
-        error   <- map["error"]
+        error <- map["error"]
         code <- map["errcode"]
     }
 }

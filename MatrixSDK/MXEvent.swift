@@ -134,19 +134,19 @@ class MXEvent: Mappable {
         
         prevContent <- map["prev_content"]
         /// 'prev_content' has been moved under unsigned in some server responses
-        if (prevContent == nil)        {
+        if prevContent == nil {
             prevContent <- map["unsigned.prev_content"]
         }
         
         age <- map["age"]
         /// 'age' has been moved under unsigned.
-        if (age == nil){
+        if age == nil {
             age <- map["age"]
         }
         
         redactedBecause <- map["redacted_because"]
         /// 'redacted_because' has been moved under unsigned.
-        if (redactedBecause == nil) {
+        if redactedBecause == nil {
             redactedBecause <- map["unsigned.redacted_because"]
         }
         
@@ -181,7 +181,7 @@ class MXEvent: Mappable {
         guard type == EventType.roomMessage, let msgType = content["msgtype"] as? String else {
             return false
         }
-        return  MessageType(rawValue: msgType) == MessageType.emote
+        return MessageType(rawValue: msgType) == MessageType.emote
     }
     
     /// Indicates if the event corresponds to a user profile change
@@ -220,7 +220,7 @@ class MXEvent: Mappable {
             for (_, value) in content {
                 if let dict = value as? Dictionary<String, Any>, let readDict = dict["m.read"] as? Dictionary<String, Any> {
                     for (userId, _) in readDict {
-                        if(array.index(of: userId) == nil){
+                        if array.index(of: userId) == nil {
                             array.append(userId)
                         }
                     }
@@ -250,12 +250,9 @@ class MXEvent: Mappable {
     /// - Returns: a ComparisonResult value: orderedAscending if otherEvent is newer than self, orderedDescending in other case
     func compareOriginServerTs(with otherEvent: MXEvent) -> ComparisonResult {
         var result: ComparisonResult = .orderedAscending
-        if (otherEvent.originServerTS > self.originServerTS)
-        {
+        if otherEvent.originServerTS > self.originServerTS {
             result = .orderedDescending
-        }
-        else if (otherEvent.originServerTS == self.originServerTS)
-        {
+        } else if otherEvent.originServerTS == self.originServerTS {
             result = .orderedSame;
         }
         
@@ -278,7 +275,7 @@ class MXEvent: Mappable {
         return nil
     }
     
-    var keysProved: Dictionary<String,String>? {
+    var keysProved: Dictionary<String, String>? {
         if let _clearEvent = clearEvent {
             return _clearEvent._keysProved
         } else {
@@ -286,7 +283,7 @@ class MXEvent: Mappable {
         }
     }
     
-    var keysClaimed: Dictionary<String,String>? {
+    var keysClaimed: Dictionary<String, String>? {
         if let _clearEvent = clearEvent {
             return _clearEvent.keysClaimed;
         } else {

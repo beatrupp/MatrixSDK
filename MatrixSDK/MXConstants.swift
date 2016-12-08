@@ -40,7 +40,7 @@ enum EventType: String, RawRepresentable {
     case callHangup             = "m.call.hangup"
 }
 
-enum MessageType : String, RawRepresentable {
+enum MessageType: String, RawRepresentable {
     case text      = "m.text"
     case emote     = "m.emote"
     case notice    = "m.notice"
@@ -51,13 +51,13 @@ enum MessageType : String, RawRepresentable {
     case file      = "m.file"
 }
 
-enum PresenceType : String, RawRepresentable {
+enum PresenceType: String, RawRepresentable {
     case online      = "online"
     case offline     = "offline"
     case unavailable = "unavailable"
 }
 
-enum MembershipType : String, RawRepresentable {
+enum MembershipType: String, RawRepresentable {
     case invite = "invite"
     case join   = "join"
     case leave  = "leave"

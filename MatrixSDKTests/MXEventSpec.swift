@@ -13,7 +13,7 @@ import ObjectMapper
 @testable import MatrixSDK
 
 class MXEventSpec: QuickSpec {
-    let data : [String: Any] = [
+    let data: [String: Any] = [
         "age": 242352,
         "content": [
             "aliases": [
@@ -29,7 +29,7 @@ class MXEventSpec: QuickSpec {
         "type": "m.room.aliases"
     ]
     
-    let otherData : [String: Any] = [
+    let otherData: [String: Any] = [
         "age": 242352,
         "content": [
             "aliases": [
@@ -72,7 +72,7 @@ class MXEventSpec: QuickSpec {
         }
         
         describe("MXEvent - Methods") {
-            it("compare origin server timestamp properly"){
+            it("compare origin server timestamp properly") {
                 let event: MXEvent? = Mapper<MXEvent>().map(JSON: self.data)
                 let otherEvent: MXEvent? = Mapper<MXEvent>().map(JSON: self.otherData)
                 
