@@ -62,6 +62,7 @@ enum MembershipType: String, RawRepresentable {
     case join   = "join"
     case leave  = "leave"
     case ban    = "ban"
+    case knock  = "knock"
 }
 
 /// Methods of thumbnailing supported by the Matrix content repository

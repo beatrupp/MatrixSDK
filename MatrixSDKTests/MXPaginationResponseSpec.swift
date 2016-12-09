@@ -1,5 +1,5 @@
 //
-//  MXPaginationResponse.swift
+//  MXPaginationResponseSpec.swift
 //  MatrixSDK
 //
 //  Created by Gustavo Perdomo on 12/8/16.

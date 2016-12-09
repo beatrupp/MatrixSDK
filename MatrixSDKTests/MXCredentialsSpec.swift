@@ -1,5 +1,5 @@
 //
-//  MXCredentialsTests.swift
+//  MXCredentialsSpec.swift
 //  MatrixSDK
 //
 //  Created by Gustavo Perdomo on 12/06/16.

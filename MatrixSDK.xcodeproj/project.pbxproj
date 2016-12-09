@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31017B4E1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31017B4D1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift */; };
+		31017B501DFA51A10098BF3F /* MXPresenceEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31017B4F1DFA51A10098BF3F /* MXPresenceEventContent.swift */; };
+		31017B521DFA55240098BF3F /* MXPresenceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31017B511DFA55240098BF3F /* MXPresenceResponse.swift */; };
+		31017B541DFA56D50098BF3F /* MXPresenceEventContentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31017B531DFA56D50098BF3F /* MXPresenceEventContentSpec.swift */; };
+		31017B561DFA5A440098BF3F /* MXPresenceResponseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31017B551DFA5A440098BF3F /* MXPresenceResponseSpec.swift */; };
 		3103543B1DF9896A005DC4D9 /* MXPublicRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */; };
 		3103543D1DF993AB005DC4D9 /* MXPublicRoomSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103543C1DF993AB005DC4D9 /* MXPublicRoomSpec.swift */; };
 		3103543F1DF996BF005DC4D9 /* MXCreateRoomResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103543E1DF996BF005DC4D9 /* MXCreateRoomResponse.swift */; };
 		310354411DF997E7005DC4D9 /* MXPaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310354401DF997E7005DC4D9 /* MXPaginationResponse.swift */; };
 		310354431DF999E8005DC4D9 /* MXPaginationResponseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310354421DF999E8005DC4D9 /* MXPaginationResponseSpec.swift */; };
+		31189CFD1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */; };
 		3130A2791DF78AA3002CE90F /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */; };
 		3130A27E1DF78AA3002CE90F /* MatrixSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3130A27D1DF78AA3002CE90F /* MatrixSDKTests.swift */; };
 		3130A2801DF78AA3002CE90F /* MatrixSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3130A2721DF78AA3002CE90F /* MatrixSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,11 +64,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		31017B4D1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomMemberEventContentSpec.swift; sourceTree = "<group>"; };
+		31017B4F1DFA51A10098BF3F /* MXPresenceEventContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPresenceEventContent.swift; sourceTree = "<group>"; };
+		31017B511DFA55240098BF3F /* MXPresenceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPresenceResponse.swift; sourceTree = "<group>"; };
+		31017B531DFA56D50098BF3F /* MXPresenceEventContentSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPresenceEventContentSpec.swift; sourceTree = "<group>"; };
+		31017B551DFA5A440098BF3F /* MXPresenceResponseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPresenceResponseSpec.swift; sourceTree = "<group>"; };
 		3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPublicRoom.swift; sourceTree = "<group>"; };
 		3103543C1DF993AB005DC4D9 /* MXPublicRoomSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPublicRoomSpec.swift; sourceTree = "<group>"; };
 		3103543E1DF996BF005DC4D9 /* MXCreateRoomResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCreateRoomResponse.swift; sourceTree = "<group>"; };
 		310354401DF997E7005DC4D9 /* MXPaginationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPaginationResponse.swift; sourceTree = "<group>"; };
 		310354421DF999E8005DC4D9 /* MXPaginationResponseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPaginationResponseSpec.swift; sourceTree = "<group>"; };
+		31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomMemberEventContent.swift; sourceTree = "<group>"; };
 		3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3130A2721DF78AA3002CE90F /* MatrixSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSDK.h; sourceTree = "<group>"; };
 		3130A2731DF78AA3002CE90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +172,9 @@
 				3103543C1DF993AB005DC4D9 /* MXPublicRoomSpec.swift */,
 				310354421DF999E8005DC4D9 /* MXPaginationResponseSpec.swift */,
 				31FAD37A1DF9A36E0083AF00 /* MXCreateRoomResponseSpec.swift */,
+				31017B4D1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift */,
+				31017B531DFA56D50098BF3F /* MXPresenceEventContentSpec.swift */,
+				31017B551DFA5A440098BF3F /* MXPresenceResponseSpec.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -173,6 +188,9 @@
 				3103543A1DF9896A005DC4D9 /* MXPublicRoom.swift */,
 				3103543E1DF996BF005DC4D9 /* MXCreateRoomResponse.swift */,
 				310354401DF997E7005DC4D9 /* MXPaginationResponse.swift */,
+				31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */,
+				31017B4F1DFA51A10098BF3F /* MXPresenceEventContent.swift */,
+				31017B511DFA55240098BF3F /* MXPresenceResponse.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -301,6 +319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31017B521DFA55240098BF3F /* MXPresenceResponse.swift in Sources */,
+				31017B501DFA51A10098BF3F /* MXPresenceEventContent.swift in Sources */,
+				31189CFD1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift in Sources */,
 				318A29571DF7B5C900901E6D /* MXCredentials.swift in Sources */,
 				318A29581DF7B5C900901E6D /* MXError.swift in Sources */,
 				318A295B1DF7B5E600901E6D /* MXConstants.swift in Sources */,
@@ -315,9 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31017B541DFA56D50098BF3F /* MXPresenceEventContentSpec.swift in Sources */,
+				31017B4E1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift in Sources */,
 				31FAD37B1DF9A36E0083AF00 /* MXCreateRoomResponseSpec.swift in Sources */,
 				3130A27E1DF78AA3002CE90F /* MatrixSDKTests.swift in Sources */,
 				310354431DF999E8005DC4D9 /* MXPaginationResponseSpec.swift in Sources */,
+				31017B561DFA5A440098BF3F /* MXPresenceResponseSpec.swift in Sources */,
 				318A29521DF7B58900901E6D /* MXEventSpec.swift in Sources */,
 				318A29501DF7B58900901E6D /* MXCredentialsSpec.swift in Sources */,
 				3103543D1DF993AB005DC4D9 /* MXPublicRoomSpec.swift in Sources */,
