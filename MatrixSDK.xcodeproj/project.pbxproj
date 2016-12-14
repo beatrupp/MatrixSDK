@@ -18,9 +18,12 @@
 		310354411DF997E7005DC4D9 /* MXPaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310354401DF997E7005DC4D9 /* MXPaginationResponse.swift */; };
 		310354431DF999E8005DC4D9 /* MXPaginationResponseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310354421DF999E8005DC4D9 /* MXPaginationResponseSpec.swift */; };
 		31189CFD1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */; };
+		3119667C1E00873C005A1115 /* MXRoomTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119667B1E00873C005A1115 /* MXRoomTag.swift */; };
+		3119A6E21E00D428004C3289 /* MXRoomTagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119A6E11E00D428004C3289 /* MXRoomTagSpec.swift */; };
 		3130A2791DF78AA3002CE90F /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */; };
 		3130A27E1DF78AA3002CE90F /* MatrixSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3130A27D1DF78AA3002CE90F /* MatrixSDKTests.swift */; };
 		3130A2801DF78AA3002CE90F /* MatrixSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3130A2721DF78AA3002CE90F /* MatrixSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3172A8E91E0083B400F5A8B3 /* MXThirdPartyIdentifierSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172A8E81E0083B400F5A8B3 /* MXThirdPartyIdentifierSpec.swift */; };
 		318A29421DF7B4A400901E6D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318A29411DF7B4A400901E6D /* ObjectMapper.framework */; };
 		318A29431DF7B4D200901E6D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318A29411DF7B4A400901E6D /* ObjectMapper.framework */; };
 		318A29491DF7B54600901E6D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318A29461DF7B54600901E6D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,6 +39,7 @@
 		319541F31DF79B38000BB882 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319541F11DF79B38000BB882 /* Nimble.framework */; };
 		319541F41DF79B38000BB882 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319541F21DF79B38000BB882 /* Quick.framework */; };
 		31FAD37B1DF9A36E0083AF00 /* MXCreateRoomResponseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAD37A1DF9A36E0083AF00 /* MXCreateRoomResponseSpec.swift */; };
+		C11F67296B85F039D9E728B4 /* MXThirdPartyIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F6324859EA42EE09C5E01 /* MXThirdPartyIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +79,15 @@
 		310354401DF997E7005DC4D9 /* MXPaginationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPaginationResponse.swift; sourceTree = "<group>"; };
 		310354421DF999E8005DC4D9 /* MXPaginationResponseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPaginationResponseSpec.swift; sourceTree = "<group>"; };
 		31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomMemberEventContent.swift; sourceTree = "<group>"; };
+		3119667B1E00873C005A1115 /* MXRoomTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomTag.swift; sourceTree = "<group>"; };
+		3119A6E11E00D428004C3289 /* MXRoomTagSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomTagSpec.swift; sourceTree = "<group>"; };
 		3130A26F1DF78AA3002CE90F /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3130A2721DF78AA3002CE90F /* MatrixSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSDK.h; sourceTree = "<group>"; };
 		3130A2731DF78AA3002CE90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3130A2781DF78AA3002CE90F /* MatrixSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3130A27D1DF78AA3002CE90F /* MatrixSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSDKTests.swift; sourceTree = "<group>"; };
 		3130A27F1DF78AA3002CE90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3172A8E81E0083B400F5A8B3 /* MXThirdPartyIdentifierSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXThirdPartyIdentifierSpec.swift; sourceTree = "<group>"; };
 		318A29411DF7B4A400901E6D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		318A29461DF7B54600901E6D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		318A29471DF7B54600901E6D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -95,6 +102,7 @@
 		319541F11DF79B38000BB882 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		319541F21DF79B38000BB882 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		31FAD37A1DF9A36E0083AF00 /* MXCreateRoomResponseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCreateRoomResponseSpec.swift; sourceTree = "<group>"; };
+		C11F6324859EA42EE09C5E01 /* MXThirdPartyIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXThirdPartyIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,8 @@
 				31017B4D1DFA50BA0098BF3F /* MXRoomMemberEventContentSpec.swift */,
 				31017B531DFA56D50098BF3F /* MXPresenceEventContentSpec.swift */,
 				31017B551DFA5A440098BF3F /* MXPresenceResponseSpec.swift */,
+				3172A8E81E0083B400F5A8B3 /* MXThirdPartyIdentifierSpec.swift */,
+				3119A6E11E00D428004C3289 /* MXRoomTagSpec.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -191,6 +201,8 @@
 				31189CFC1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift */,
 				31017B4F1DFA51A10098BF3F /* MXPresenceEventContent.swift */,
 				31017B511DFA55240098BF3F /* MXPresenceResponse.swift */,
+				C11F6324859EA42EE09C5E01 /* MXThirdPartyIdentifier.swift */,
+				3119667B1E00873C005A1115 /* MXRoomTag.swift */,
 			);
 			name = JSONModels;
 			sourceTree = "<group>";
@@ -263,7 +275,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Gustavo Perdomo";
 				TargetAttributes = {
 					3130A26E1DF78AA2002CE90F = {
@@ -319,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3119667C1E00873C005A1115 /* MXRoomTag.swift in Sources */,
 				31017B521DFA55240098BF3F /* MXPresenceResponse.swift in Sources */,
 				31017B501DFA51A10098BF3F /* MXPresenceEventContent.swift in Sources */,
 				31189CFD1DF9AF45009D12F7 /* MXRoomMemberEventContent.swift in Sources */,
@@ -329,6 +342,7 @@
 				3103543F1DF996BF005DC4D9 /* MXCreateRoomResponse.swift in Sources */,
 				318A29591DF7B5C900901E6D /* MXEvent.swift in Sources */,
 				310354411DF997E7005DC4D9 /* MXPaginationResponse.swift in Sources */,
+				C11F67296B85F039D9E728B4 /* MXThirdPartyIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +357,11 @@
 				310354431DF999E8005DC4D9 /* MXPaginationResponseSpec.swift in Sources */,
 				31017B561DFA5A440098BF3F /* MXPresenceResponseSpec.swift in Sources */,
 				318A29521DF7B58900901E6D /* MXEventSpec.swift in Sources */,
+				3119A6E21E00D428004C3289 /* MXRoomTagSpec.swift in Sources */,
 				318A29501DF7B58900901E6D /* MXCredentialsSpec.swift in Sources */,
 				3103543D1DF993AB005DC4D9 /* MXPublicRoomSpec.swift in Sources */,
 				318A29511DF7B58900901E6D /* MXErrorSpec.swift in Sources */,
+				3172A8E91E0083B400F5A8B3 /* MXThirdPartyIdentifierSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +394,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -431,6 +448,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
