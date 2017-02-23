@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* MatrixSDK-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MatrixSDK-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9961BEFF375002C0205 /* MatrixSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDK.swift; path = Sources/MatrixSDK.swift; sourceTree = "<group>"; };
+		52D6D9961BEFF375002C0205 /* MatrixSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDK.swift; path = Sources/MatrixSDK/MatrixSDK.swift; sourceTree = "<group>"; };
 		52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDKTests.swift; path = Tests/MatrixSDKTests/MatrixSDKTests.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +116,8 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
-				52D6D9961BEFF375002C0205 /* MatrixSDK.swift */,
-				52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */,
+				656FE52E1E5F25A50028B627 /* Sources */,
+				656FE52D1E5F258E0028B627 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
@@ -144,6 +144,38 @@
 				DD7502731C68FC20006590AF /* Tests */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		656FE52C1E5F25380028B627 /* MatrixSDK */ = {
+			isa = PBXGroup;
+			children = (
+				52D6D9961BEFF375002C0205 /* MatrixSDK.swift */,
+			);
+			name = MatrixSDK;
+			sourceTree = "<group>";
+		};
+		656FE52D1E5F258E0028B627 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				656FE52F1E5F25AE0028B627 /* MatrixSDKTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		656FE52E1E5F25A50028B627 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				656FE52C1E5F25380028B627 /* MatrixSDK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		656FE52F1E5F25AE0028B627 /* MatrixSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */,
+			);
+			name = MatrixSDKTests;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -330,7 +362,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "MatrixSDK";
+				ORGANIZATIONNAME = MatrixSDK;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
