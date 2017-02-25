@@ -1,6 +1,8 @@
 /**
+ *  TestProvider.swift
  *  MatrixSDK
  *
+ *  Created by Gustavo Perdomo on 2/23/17.
  *  Copyright (c) 2017 Gustavo Perdomo. Licensed under the MIT license, as follows:
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,3 +25,33 @@
  */
 
 import Foundation
+import Moya
+
+class TestProvider<Target: TargetType>: MoyaProvider<Target> {
+    init(responseClosure: ((Target) -> EndpointSampleResponse)? = nil) {
+        var endpointClosure: EndpointClosure
+        
+        if let responseClosure = responseClosure {
+            endpointClosure = {
+                target in
+                
+                let sampleResponseClosure: Endpoint<Target>.SampleResponseClosure = {
+                    return responseClosure(target)
+                }
+                
+                return Endpoint(
+                    url: target.baseURL.absoluteString,
+                    sampleResponseClosure: sampleResponseClosure,
+                    method: target.method,
+                    parameters: target.parameters,
+                    parameterEncoding: target.parameterEncoding,
+                    httpHeaderFields: nil
+                )
+            }
+        } else {
+            endpointClosure = MoyaProvider<Target>.defaultEndpointMapping
+        }
+        
+        super.init(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub, plugins: [])
+    }
+}

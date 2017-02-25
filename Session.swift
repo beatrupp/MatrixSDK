@@ -1,8 +1,8 @@
 /**
- *  MatrixSDKTests.swift
+ *  Session.swift
  *  MatrixSDK
  *
- *  Created by Gustavo Perdomo on 2/22/17.
+ *  Created by Gustavo Perdomo on 2/23/17.
  *  Copyright (c) 2017 Gustavo Perdomo. Licensed under the MIT license, as follows:
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,23 +25,52 @@
  */
 
 import Foundation
-import XCTest
-import MatrixSDK
+import Moya
 
-class MatrixSDKTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //// XCTAssertEqual(MatrixSDK().text, "Hello, World!")
+public enum Session {
+    case login(username: String, password: String)
+    case logout()
+    case tokenRefresh()
+}
+
+extension Session: SubTarget {
+    public var path: String {
+        switch self {
+        case .login(_, _):
+            return "/login"
+        case .logout():
+            return "/logout"
+        case .tokenRefresh():
+            return "/tokenrefresh"
+        }
+    }
+    
+    public var method: Moya.Method {
+        return .post
+    }
+    
+    public var parameters: [String: Any]? {
+        switch self {
+        case .login(let username, let password):
+            return [
+                "user": username,
+                "password": password,
+                "type": "m.login.password"
+            ]
+        default: return nil
+        }
+    }
+    
+    public var sampleData: Data {
+        return Data()
+    }
+    
+    public var task: Task {
+        return .request
+    }
+    
+    public var parameterEncoding: ParameterEncoding {
+        return JSONEncoding.default
     }
 }
 
-#if os(Linux)
-extension MatrixSDKTests {
-    static var allTests : [(String, (MatrixSDKTests) -> () throws -> Void)] {
-        return [
-            ("testExample", testExample),
-        ]
-    }
-}
-#endif

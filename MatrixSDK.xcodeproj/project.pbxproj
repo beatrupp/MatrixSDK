@@ -8,11 +8,102 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* MatrixSDK.framework */; };
-		52D6D9981BEFF375002C0205 /* MatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MatrixSDK.swift */; };
 		52D6D99B1BEFF375002C0205 /* MatrixSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */; };
-		52D6D9EA1BEFFFA4002C0205 /* MatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MatrixSDK.swift */; };
-		52D6DA091BF00081002C0205 /* MatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MatrixSDK.swift */; };
-		52D6DA261BF00118002C0205 /* MatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9961BEFF375002C0205 /* MatrixSDK.swift */; };
+		6518B6291E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
+		6518B62A1E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
+		6518B62B1E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
+		656FE5311E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
+		656FE5321E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
+		656FE5331E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
+		656FE5341E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
+		656FE5431E5F3BBB0028B627 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5411E5F3BBB0028B627 /* Nimble.framework */; };
+		656FE5441E5F3BBB0028B627 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5421E5F3BBB0028B627 /* Quick.framework */; };
+		656FE54D1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
+		656FE54E1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
+		656FE54F1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
+		656FE5501E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
+		656FE5601E5F42DD0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
+		656FE5781E5F49F50028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE53F1E5F38270028B627 /* Alamofire.framework */; };
+		656FE5791E5F49F50028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5381E5F35270028B627 /* Moya.framework */; };
+		656FE57A1E5F49F50028B627 /* MoyaObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */; };
+		656FE57B1E5F49F50028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE55D1E5F428A0028B627 /* ObjectMapper.framework */; };
+		656FE57C1E5F49F50028B627 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE55B1E5F425D0028B627 /* Result.framework */; };
+		656FE57D1E5F49F50028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE53A1E5F35270028B627 /* SwifterSwift.framework */; };
+		656FE5801E5F4A0D0028B627 /* Moya.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5381E5F35270028B627 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5811E5F4A0D0028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5821E5F4A0D0028B627 /* Nimble.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5411E5F3BBB0028B627 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5831E5F4A0D0028B627 /* ObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE55D1E5F428A0028B627 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5841E5F4A0D0028B627 /* Quick.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5421E5F3BBB0028B627 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5851E5F4A0D0028B627 /* Result.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE55B1E5F425D0028B627 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5861E5F4A0D0028B627 /* SwifterSwift.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE53A1E5F35270028B627 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5871E5F4A240028B627 /* Alamofire.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE53F1E5F38270028B627 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE59B1E5F4A960028B627 /* Alamofire.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5891E5F4A6C0028B627 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE59C1E5F4A960028B627 /* Moya.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58A1E5F4A6C0028B627 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE59D1E5F4A960028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58B1E5F4A6C0028B627 /* MoyaObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE59E1E5F4A960028B627 /* Nimble.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58C1E5F4A6C0028B627 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE59F1E5F4A960028B627 /* ObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5A01E5F4A960028B627 /* Quick.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58E1E5F4A6C0028B627 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5A11E5F4A960028B627 /* Result.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58F1E5F4A6C0028B627 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5A21E5F4A960028B627 /* SwifterSwift.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE5A31E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
+		656FE5A41E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
+		656FE5D91E5F4B9C0028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5891E5F4A6C0028B627 /* Alamofire.framework */; };
+		656FE5DA1E5F4B9C0028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58A1E5F4A6C0028B627 /* Moya.framework */; };
+		656FE5DB1E5F4B9C0028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */; };
+		656FE5DC1E5F4B9C0028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */; };
+		656FE5DD1E5F4BA70028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE53F1E5F38270028B627 /* Alamofire.framework */; };
+		656FE5DE1E5F4BA70028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5381E5F35270028B627 /* Moya.framework */; };
+		656FE5DF1E5F4BA70028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE55D1E5F428A0028B627 /* ObjectMapper.framework */; };
+		656FE5E01E5F4BA70028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE53A1E5F35270028B627 /* SwifterSwift.framework */; };
+		656FE5E11E5F4BB80028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5891E5F4A6C0028B627 /* Alamofire.framework */; };
+		656FE5E21E5F4BB80028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58A1E5F4A6C0028B627 /* Moya.framework */; };
+		656FE5E31E5F4BB80028B627 /* MoyaObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58B1E5F4A6C0028B627 /* MoyaObjectMapper.framework */; };
+		656FE5E41E5F4BB80028B627 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58C1E5F4A6C0028B627 /* Nimble.framework */; };
+		656FE5E51E5F4BB80028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */; };
+		656FE5E61E5F4BB80028B627 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58E1E5F4A6C0028B627 /* Quick.framework */; };
+		656FE5E71E5F4BB80028B627 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58F1E5F4A6C0028B627 /* Result.framework */; };
+		656FE5E81E5F4BB80028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */; };
+		656FE6101E5F4D080028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE60C1E5F4D080028B627 /* Alamofire.framework */; };
+		656FE6111E5F4D080028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE60D1E5F4D080028B627 /* Moya.framework */; };
+		656FE6121E5F4D080028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE60E1E5F4D080028B627 /* ObjectMapper.framework */; };
+		656FE6131E5F4D080028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE60F1E5F4D080028B627 /* SwifterSwift.framework */; };
+		656FE62E1E5F4D790028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6261E5F4D790028B627 /* Alamofire.framework */; };
+		656FE62F1E5F4D790028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6271E5F4D790028B627 /* Moya.framework */; };
+		656FE6321E5F4D790028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62A1E5F4D790028B627 /* ObjectMapper.framework */; };
+		656FE6351E5F4D790028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62D1E5F4D790028B627 /* SwifterSwift.framework */; };
+		656FE6361E5F4D950028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6261E5F4D790028B627 /* Alamofire.framework */; };
+		656FE6371E5F4D950028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6271E5F4D790028B627 /* Moya.framework */; };
+		656FE6381E5F4D950028B627 /* MoyaObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6281E5F4D790028B627 /* MoyaObjectMapper.framework */; };
+		656FE6391E5F4D950028B627 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE6291E5F4D790028B627 /* Nimble.framework */; };
+		656FE63A1E5F4D950028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62A1E5F4D790028B627 /* ObjectMapper.framework */; };
+		656FE63B1E5F4D950028B627 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62B1E5F4D790028B627 /* Quick.framework */; };
+		656FE63C1E5F4D950028B627 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62C1E5F4D790028B627 /* Result.framework */; };
+		656FE63D1E5F4D950028B627 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE62D1E5F4D790028B627 /* SwifterSwift.framework */; };
+		656FE63F1E5F4DA60028B627 /* Alamofire.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE6261E5F4D790028B627 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6401E5F4DA60028B627 /* Moya.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE6271E5F4D790028B627 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6411E5F4DA60028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE6281E5F4D790028B627 /* MoyaObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6421E5F4DA60028B627 /* Nimble.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE6291E5F4D790028B627 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6431E5F4DA60028B627 /* ObjectMapper.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE62A1E5F4D790028B627 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6441E5F4DA60028B627 /* Quick.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE62B1E5F4D790028B627 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6451E5F4DA60028B627 /* Result.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE62C1E5F4D790028B627 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6461E5F4DA60028B627 /* SwifterSwift.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE62D1E5F4D790028B627 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		656FE6481E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
+		656FE6491E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
+		656FE64A1E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
+		656FE64B1E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
+		65C9998F1E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
+		65C999901E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
+		65C999911E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
+		65E641871E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
+		65E641881E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
+		65E641891E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
+		65E6418A1E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
+		65E6418D1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */; };
+		65E6418E1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */; };
+		65E6418F1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */; };
+		65FAA05B1E5F9036005949C4 /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FAA05A1E5F9036005949C4 /* TestProvider.swift */; };
+		65FAA05C1E5F9036005949C4 /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FAA05A1E5F9036005949C4 /* TestProvider.swift */; };
+		65FAA05D1E5F9036005949C4 /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FAA05A1E5F9036005949C4 /* TestProvider.swift */; };
 		DD7502861C68FDDC006590AF /* MatrixSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */; };
 		DD7502881C68FEDE006590AF /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* MatrixSDK.framework */; };
 		DD7502921C690C7A006590AF /* MatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* MatrixSDK.framework */; };
@@ -43,14 +134,107 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		656FE57E1E5F4A050028B627 /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				656FE5871E5F4A240028B627 /* Alamofire.framework in Carthage Copy Files */,
+				656FE5801E5F4A0D0028B627 /* Moya.framework in Carthage Copy Files */,
+				656FE5811E5F4A0D0028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */,
+				656FE5821E5F4A0D0028B627 /* Nimble.framework in Carthage Copy Files */,
+				656FE5831E5F4A0D0028B627 /* ObjectMapper.framework in Carthage Copy Files */,
+				656FE5841E5F4A0D0028B627 /* Quick.framework in Carthage Copy Files */,
+				656FE5851E5F4A0D0028B627 /* Result.framework in Carthage Copy Files */,
+				656FE5861E5F4A0D0028B627 /* SwifterSwift.framework in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FE59A1E5F4A8F0028B627 /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				656FE59B1E5F4A960028B627 /* Alamofire.framework in Carthage Copy Files */,
+				656FE59C1E5F4A960028B627 /* Moya.framework in Carthage Copy Files */,
+				656FE59D1E5F4A960028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */,
+				656FE59E1E5F4A960028B627 /* Nimble.framework in Carthage Copy Files */,
+				656FE59F1E5F4A960028B627 /* ObjectMapper.framework in Carthage Copy Files */,
+				656FE5A01E5F4A960028B627 /* Quick.framework in Carthage Copy Files */,
+				656FE5A11E5F4A960028B627 /* Result.framework in Carthage Copy Files */,
+				656FE5A21E5F4A960028B627 /* SwifterSwift.framework in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FE63E1E5F4D9D0028B627 /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				656FE63F1E5F4DA60028B627 /* Alamofire.framework in Carthage Copy Files */,
+				656FE6401E5F4DA60028B627 /* Moya.framework in Carthage Copy Files */,
+				656FE6411E5F4DA60028B627 /* MoyaObjectMapper.framework in Carthage Copy Files */,
+				656FE6421E5F4DA60028B627 /* Nimble.framework in Carthage Copy Files */,
+				656FE6431E5F4DA60028B627 /* ObjectMapper.framework in Carthage Copy Files */,
+				656FE6441E5F4DA60028B627 /* Quick.framework in Carthage Copy Files */,
+				656FE6451E5F4DA60028B627 /* Result.framework in Carthage Copy Files */,
+				656FE6461E5F4DA60028B627 /* SwifterSwift.framework in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* MatrixSDK-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MatrixSDK-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9961BEFF375002C0205 /* MatrixSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDK.swift; path = Sources/MatrixSDK/MatrixSDK.swift; sourceTree = "<group>"; };
 		52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDKTests.swift; path = Tests/MatrixSDKTests/MatrixSDKTests.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6518B6281E5FDFFF00B35A34 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		656FE5301E5F2D860028B627 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		656FE5381E5F35270028B627 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoyaObjectMapper.framework; path = Carthage/Build/iOS/MoyaObjectMapper.framework; sourceTree = "<group>"; };
+		656FE53A1E5F35270028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/iOS/SwifterSwift.framework; sourceTree = "<group>"; };
+		656FE53F1E5F38270028B627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		656FE5411E5F3BBB0028B627 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		656FE5421E5F3BBB0028B627 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionEndpointSpec.swift; sourceTree = "<group>"; };
+		656FE54C1E5F40BB0028B627 /* MXCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCredentials.swift; sourceTree = "<group>"; };
+		656FE55B1E5F425D0028B627 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		656FE55D1E5F428A0028B627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		656FE5891E5F4A6C0028B627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		656FE58A1E5F4A6C0028B627 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/Mac/Moya.framework; sourceTree = "<group>"; };
+		656FE58B1E5F4A6C0028B627 /* MoyaObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoyaObjectMapper.framework; path = Carthage/Build/Mac/MoyaObjectMapper.framework; sourceTree = "<group>"; };
+		656FE58C1E5F4A6C0028B627 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		656FE58E1E5F4A6C0028B627 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		656FE58F1E5F4A6C0028B627 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/Mac/SwifterSwift.framework; sourceTree = "<group>"; };
+		656FE60C1E5F4D080028B627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		656FE60D1E5F4D080028B627 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/watchOS/Moya.framework; sourceTree = "<group>"; };
+		656FE60E1E5F4D080028B627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		656FE60F1E5F4D080028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/watchOS/SwifterSwift.framework; sourceTree = "<group>"; };
+		656FE6261E5F4D790028B627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		656FE6271E5F4D790028B627 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/tvOS/Moya.framework; sourceTree = "<group>"; };
+		656FE6281E5F4D790028B627 /* MoyaObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoyaObjectMapper.framework; path = Carthage/Build/tvOS/MoyaObjectMapper.framework; sourceTree = "<group>"; };
+		656FE6291E5F4D790028B627 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
+		656FE62A1E5F4D790028B627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		656FE62B1E5F4D790028B627 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
+		656FE62C1E5F4D790028B627 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
+		656FE62D1E5F4D790028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/tvOS/SwifterSwift.framework; sourceTree = "<group>"; };
+		656FE6471E5F522B0028B627 /* MXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXError.swift; sourceTree = "<group>"; };
+		65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCredentialsSpec.swift; sourceTree = "<group>"; };
+		65E641861E60AA84002E6A6A /* DynamicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicProvider.swift; sourceTree = "<group>"; };
+		65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXErrorSpec.swift; sourceTree = "<group>"; };
+		65FAA05A1E5F9036005949C4 /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MatrixSDK.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MatrixSDK.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* MatrixSDKTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MatrixSDKTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* MatrixSDK-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MatrixSDK-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +246,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE5DD1E5F4BA70028B627 /* Alamofire.framework in Frameworks */,
+				656FE5DE1E5F4BA70028B627 /* Moya.framework in Frameworks */,
+				656FE5DF1E5F4BA70028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE5E01E5F4BA70028B627 /* SwifterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +257,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE5781E5F49F50028B627 /* Alamofire.framework in Frameworks */,
+				656FE5791E5F49F50028B627 /* Moya.framework in Frameworks */,
+				656FE57A1E5F49F50028B627 /* MoyaObjectMapper.framework in Frameworks */,
+				656FE5431E5F3BBB0028B627 /* Nimble.framework in Frameworks */,
+				656FE57B1E5F49F50028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE5441E5F3BBB0028B627 /* Quick.framework in Frameworks */,
+				656FE57C1E5F49F50028B627 /* Result.framework in Frameworks */,
+				656FE57D1E5F49F50028B627 /* SwifterSwift.framework in Frameworks */,
 				52D6D9871BEFF229002C0205 /* MatrixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +273,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE6101E5F4D080028B627 /* Alamofire.framework in Frameworks */,
+				656FE6111E5F4D080028B627 /* Moya.framework in Frameworks */,
+				656FE6121E5F4D080028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE6131E5F4D080028B627 /* SwifterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +284,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE62E1E5F4D790028B627 /* Alamofire.framework in Frameworks */,
+				656FE62F1E5F4D790028B627 /* Moya.framework in Frameworks */,
+				656FE6321E5F4D790028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE6351E5F4D790028B627 /* SwifterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +295,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE5D91E5F4B9C0028B627 /* Alamofire.framework in Frameworks */,
+				656FE5DA1E5F4B9C0028B627 /* Moya.framework in Frameworks */,
+				656FE5DB1E5F4B9C0028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE5DC1E5F4B9C0028B627 /* SwifterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +306,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE5E11E5F4BB80028B627 /* Alamofire.framework in Frameworks */,
+				656FE5E21E5F4BB80028B627 /* Moya.framework in Frameworks */,
+				656FE5E31E5F4BB80028B627 /* MoyaObjectMapper.framework in Frameworks */,
+				656FE5E41E5F4BB80028B627 /* Nimble.framework in Frameworks */,
+				656FE5E51E5F4BB80028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE5E61E5F4BB80028B627 /* Quick.framework in Frameworks */,
+				656FE5E71E5F4BB80028B627 /* Result.framework in Frameworks */,
+				656FE5E81E5F4BB80028B627 /* SwifterSwift.framework in Frameworks */,
 				DD7502881C68FEDE006590AF /* MatrixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +322,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FE6361E5F4D950028B627 /* Alamofire.framework in Frameworks */,
+				656FE6371E5F4D950028B627 /* Moya.framework in Frameworks */,
+				656FE6381E5F4D950028B627 /* MoyaObjectMapper.framework in Frameworks */,
+				656FE6391E5F4D950028B627 /* Nimble.framework in Frameworks */,
+				656FE63A1E5F4D950028B627 /* ObjectMapper.framework in Frameworks */,
+				656FE63B1E5F4D950028B627 /* Quick.framework in Frameworks */,
+				656FE63C1E5F4D950028B627 /* Result.framework in Frameworks */,
+				656FE63D1E5F4D950028B627 /* SwifterSwift.framework in Frameworks */,
 				DD7502921C690C7A006590AF /* MatrixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +344,7 @@
 				656FE52D1E5F258E0028B627 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
+				656FE5371E5F35270028B627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,10 +371,20 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		6518B6271E5FDF9100B35A34 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				6518B6281E5FDFFF00B35A34 /* Fixtures.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		656FE52C1E5F25380028B627 /* MatrixSDK */ = {
 			isa = PBXGroup;
 			children = (
-				52D6D9961BEFF375002C0205 /* MatrixSDK.swift */,
+				65E641851E60AA4B002E6A6A /* Helpers */,
+				656FE5351E5F2E9F0028B627 /* Targets */,
+				656FE54B1E5F40880028B627 /* Models */,
 			);
 			name = MatrixSDK;
 			sourceTree = "<group>";
@@ -157,7 +392,7 @@
 		656FE52D1E5F258E0028B627 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				656FE52F1E5F25AE0028B627 /* MatrixSDKTests */,
+				656FE52F1E5F25AE0028B627 /* MatrixSDK */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -170,12 +405,133 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		656FE52F1E5F25AE0028B627 /* MatrixSDKTests */ = {
+		656FE52F1E5F25AE0028B627 /* MatrixSDK */ = {
 			isa = PBXGroup;
 			children = (
+				6518B6271E5FDF9100B35A34 /* Fixtures */,
+				65FAA0591E5F901E005949C4 /* Helpers */,
+				656FE54A1E5F3FF20028B627 /* Specs */,
 				52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */,
 			);
-			name = MatrixSDKTests;
+			name = MatrixSDK;
+			sourceTree = "<group>";
+		};
+		656FE5351E5F2E9F0028B627 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				656FE5301E5F2D860028B627 /* Session.swift */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		656FE5371E5F35270028B627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656FE5881E5F4A340028B627 /* iOS */,
+				656FE5991E5F4A710028B627 /* macOS */,
+				656FE6141E5F4D0F0028B627 /* watchOS */,
+				656FE6251E5F4D3B0028B627 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		656FE54A1E5F3FF20028B627 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				65E6418B1E60B163002E6A6A /* Models */,
+				656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
+		656FE54B1E5F40880028B627 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				656FE54C1E5F40BB0028B627 /* MXCredentials.swift */,
+				656FE6471E5F522B0028B627 /* MXError.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		656FE5881E5F4A340028B627 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				656FE53F1E5F38270028B627 /* Alamofire.framework */,
+				656FE5381E5F35270028B627 /* Moya.framework */,
+				656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */,
+				656FE5411E5F3BBB0028B627 /* Nimble.framework */,
+				656FE55D1E5F428A0028B627 /* ObjectMapper.framework */,
+				656FE5421E5F3BBB0028B627 /* Quick.framework */,
+				656FE55B1E5F425D0028B627 /* Result.framework */,
+				656FE53A1E5F35270028B627 /* SwifterSwift.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		656FE5991E5F4A710028B627 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				656FE5891E5F4A6C0028B627 /* Alamofire.framework */,
+				656FE58A1E5F4A6C0028B627 /* Moya.framework */,
+				656FE58B1E5F4A6C0028B627 /* MoyaObjectMapper.framework */,
+				656FE58C1E5F4A6C0028B627 /* Nimble.framework */,
+				656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */,
+				656FE58E1E5F4A6C0028B627 /* Quick.framework */,
+				656FE58F1E5F4A6C0028B627 /* Result.framework */,
+				656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		656FE6141E5F4D0F0028B627 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				656FE60C1E5F4D080028B627 /* Alamofire.framework */,
+				656FE60D1E5F4D080028B627 /* Moya.framework */,
+				656FE60E1E5F4D080028B627 /* ObjectMapper.framework */,
+				656FE60F1E5F4D080028B627 /* SwifterSwift.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		656FE6251E5F4D3B0028B627 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				656FE6261E5F4D790028B627 /* Alamofire.framework */,
+				656FE6271E5F4D790028B627 /* Moya.framework */,
+				656FE6281E5F4D790028B627 /* MoyaObjectMapper.framework */,
+				656FE6291E5F4D790028B627 /* Nimble.framework */,
+				656FE62A1E5F4D790028B627 /* ObjectMapper.framework */,
+				656FE62B1E5F4D790028B627 /* Quick.framework */,
+				656FE62C1E5F4D790028B627 /* Result.framework */,
+				656FE62D1E5F4D790028B627 /* SwifterSwift.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		65E641851E60AA4B002E6A6A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				65E641861E60AA84002E6A6A /* DynamicProvider.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		65E6418B1E60B163002E6A6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */,
+				65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		65FAA0591E5F901E005949C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				65FAA05A1E5F9036005949C4 /* TestProvider.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -236,6 +592,7 @@
 				52D6D9781BEFF229002C0205 /* Frameworks */,
 				52D6D9791BEFF229002C0205 /* Headers */,
 				52D6D97A1BEFF229002C0205 /* Resources */,
+				656FE69B1E5F772C0028B627 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -253,6 +610,7 @@
 				52D6D9821BEFF229002C0205 /* Sources */,
 				52D6D9831BEFF229002C0205 /* Frameworks */,
 				52D6D9841BEFF229002C0205 /* Resources */,
+				656FE57E1E5F4A050028B627 /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
@@ -325,6 +683,7 @@
 				DD7502761C68FCFC006590AF /* Sources */,
 				DD7502771C68FCFC006590AF /* Frameworks */,
 				DD7502781C68FCFC006590AF /* Resources */,
+				656FE59A1E5F4A8F0028B627 /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
@@ -343,6 +702,7 @@
 				DD7502891C690C7A006590AF /* Sources */,
 				DD75028A1C690C7A006590AF /* Frameworks */,
 				DD75028B1C690C7A006590AF /* Resources */,
+				656FE63E1E5F4D9D0028B627 /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
@@ -469,12 +829,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		656FE69B1E5F772C0028B627 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9981BEFF375002C0205 /* MatrixSDK.swift in Sources */,
+				65E641871E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				656FE54D1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
+				656FE5311E5F2D860028B627 /* Session.swift in Sources */,
+				656FE6481E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +862,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C9998F1E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
+				65FAA05B1E5F9036005949C4 /* TestProvider.swift in Sources */,
+				656FE5601E5F42DD0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65E6418D1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				52D6D99B1BEFF375002C0205 /* MatrixSDKTests.swift in Sources */,
+				6518B6291E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +875,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6D9EA1BEFFFA4002C0205 /* MatrixSDK.swift in Sources */,
+				65E641891E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				656FE54F1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
+				656FE5331E5F2D860028B627 /* Session.swift in Sources */,
+				656FE64A1E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +886,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA091BF00081002C0205 /* MatrixSDK.swift in Sources */,
+				65E6418A1E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				656FE5501E5F40BB0028B627 /* MXCredentials.swift in Sources */,
+				656FE5341E5F2D860028B627 /* Session.swift in Sources */,
+				656FE64B1E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +897,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D6DA261BF00118002C0205 /* MatrixSDK.swift in Sources */,
+				65E641881E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				656FE54E1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
+				656FE5321E5F2D860028B627 /* Session.swift in Sources */,
+				656FE6491E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +908,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C999901E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
+				65FAA05C1E5F9036005949C4 /* TestProvider.swift in Sources */,
+				656FE5A31E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65E6418E1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD7502861C68FDDC006590AF /* MatrixSDKTests.swift in Sources */,
+				6518B62A1E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +921,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C999911E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
+				65FAA05D1E5F9036005949C4 /* TestProvider.swift in Sources */,
+				656FE5A41E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65E6418F1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD75029A1C690CBE006590AF /* MatrixSDKTests.swift in Sources */,
+				6518B62B1E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +1056,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -675,6 +1084,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -691,6 +1105,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-iOS-Tests";
@@ -704,6 +1122,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-iOS-Tests";
@@ -722,6 +1144,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -731,7 +1158,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -744,6 +1171,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -754,7 +1186,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -767,6 +1199,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -789,6 +1225,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -813,11 +1253,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-macOS";
 				PRODUCT_NAME = MatrixSDK;
 				SDKROOT = macosx;
@@ -836,11 +1280,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/MatrixSDK.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-macOS";
 				PRODUCT_NAME = MatrixSDK;
 				SDKROOT = macosx;
@@ -855,9 +1303,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -870,9 +1322,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -884,6 +1340,10 @@
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-tvOS-Tests";
@@ -897,6 +1357,10 @@
 		DD7502971C690C7A006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Configs/MatrixSDKTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatrixSDK.MatrixSDK-tvOS-Tests";

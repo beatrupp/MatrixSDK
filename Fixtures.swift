@@ -1,8 +1,8 @@
 /**
- *  MatrixSDKTests.swift
+ *  Fixtures.swift
  *  MatrixSDK
  *
- *  Created by Gustavo Perdomo on 2/22/17.
+ *  Created by Gustavo Perdomo on 2/23/17.
  *  Copyright (c) 2017 Gustavo Perdomo. Licensed under the MIT license, as follows:
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,23 +25,45 @@
  */
 
 import Foundation
-import XCTest
+import SwifterSwift
+import ObjectMapper
 import MatrixSDK
 
-class MatrixSDKTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //// XCTAssertEqual(MatrixSDK().text, "Hello, World!")
+func fixtureData(_ responseType: Mappable.Type, parameters: [String: Any]? = nil) -> Data {
+    return fixture(responseType, parameters: parameters).jsonData() ?? Data()
+}
+
+func fixture(_ responseType: Mappable.Type, parameters: [String: Any]? = nil) -> [String: Any] {
+    switch responseType {
+    case is MXCredentials.Type:
+        return Fixtures.buildMXCredentials(parameters)
+        
+    case is MXError.Type:
+        return Fixtures.buildMXError(parameters)
+
+    default:
+        return [:]
     }
 }
 
-#if os(Linux)
-extension MatrixSDKTests {
-    static var allTests : [(String, (MatrixSDKTests) -> () throws -> Void)] {
+struct Fixtures {
+    static func buildMXError(_ parameters: [String: Any]? = [:]) -> [String: Any] {
         return [
-            ("testExample", testExample),
+            "errcode": parameters?["code"] ?? MXErrorCode.unknown,
+            "error": parameters?["error"] ?? ""
+        ]
+    }
+    
+    static func buildMXCredentials(_ parameters: [String: Any]? = [:]) -> [String: Any] {
+        let user = parameters?["user"] ?? "user"
+        let server = parameters?["server"] ?? "matrix.org"
+        
+        return [
+            "access_token": "ACCESS_TOKEN",
+            "home_server": "matrix.org",
+            "user_id": "@\(user):\(server)",
+            "refresh_token": "REFRESH_TOKEN",
+            "device_id": "DEVICE_ID"
         ]
     }
 }
-#endif
