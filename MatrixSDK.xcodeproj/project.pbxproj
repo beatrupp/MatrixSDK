@@ -12,10 +12,10 @@
 		6518B6291E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
 		6518B62A1E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
 		6518B62B1E5FDFFF00B35A34 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6281E5FDFFF00B35A34 /* Fixtures.swift */; };
-		656FE5311E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
-		656FE5321E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
-		656FE5331E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
-		656FE5341E5F2D860028B627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* Session.swift */; };
+		656FE5311E5F2D860028B627 /* SessionManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */; };
+		656FE5321E5F2D860028B627 /* SessionManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */; };
+		656FE5331E5F2D860028B627 /* SessionManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */; };
+		656FE5341E5F2D860028B627 /* SessionManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */; };
 		656FE5431E5F3BBB0028B627 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5411E5F3BBB0028B627 /* Nimble.framework */; };
 		656FE5441E5F3BBB0028B627 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5421E5F3BBB0028B627 /* Quick.framework */; };
 		656FE54D1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
@@ -94,6 +94,9 @@
 		65C9998F1E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
 		65C999901E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
 		65C999911E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
+		65D147F91E64806100A11973 /* SessionManagementAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */; };
+		65D147FA1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */; };
+		65D147FB1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */; };
 		65E641871E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
 		65E641881E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
 		65E641891E60AA84002E6A6A /* DynamicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E641861E60AA84002E6A6A /* DynamicProvider.swift */; };
@@ -199,7 +202,7 @@
 		52D6D9F01BEFFFBE002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6518B6281E5FDFFF00B35A34 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
-		656FE5301E5F2D860028B627 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagementAPI.swift; sourceTree = "<group>"; };
 		656FE5381E5F35270028B627 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoyaObjectMapper.framework; path = Carthage/Build/iOS/MoyaObjectMapper.framework; sourceTree = "<group>"; };
 		656FE53A1E5F35270028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/iOS/SwifterSwift.framework; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 		656FE62D1E5F4D790028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/tvOS/SwifterSwift.framework; sourceTree = "<group>"; };
 		656FE6471E5F522B0028B627 /* MXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXError.swift; sourceTree = "<group>"; };
 		65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCredentialsSpec.swift; sourceTree = "<group>"; };
+		65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagementAPISpec.swift; sourceTree = "<group>"; };
 		65E641861E60AA84002E6A6A /* DynamicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicProvider.swift; sourceTree = "<group>"; };
 		65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXErrorSpec.swift; sourceTree = "<group>"; };
 		65FAA05A1E5F9036005949C4 /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
@@ -419,7 +423,7 @@
 		656FE5351E5F2E9F0028B627 /* Targets */ = {
 			isa = PBXGroup;
 			children = (
-				656FE5301E5F2D860028B627 /* Session.swift */,
+				656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -438,6 +442,7 @@
 		656FE54A1E5F3FF20028B627 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				65D147F71E647FD800A11973 /* Targets */,
 				65E6418B1E60B163002E6A6A /* Models */,
 				656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */,
 			);
@@ -507,6 +512,14 @@
 				656FE62D1E5F4D790028B627 /* SwifterSwift.framework */,
 			);
 			name = tvOS;
+			sourceTree = "<group>";
+		};
+		65D147F71E647FD800A11973 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */,
+			);
+			name = Targets;
 			sourceTree = "<group>";
 		};
 		65E641851E60AA4B002E6A6A /* Helpers */ = {
@@ -853,7 +866,7 @@
 			files = (
 				65E641871E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
 				656FE54D1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
-				656FE5311E5F2D860028B627 /* Session.swift in Sources */,
+				656FE5311E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE6481E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,6 +880,7 @@
 				656FE5601E5F42DD0028B627 /* SessionEndpointSpec.swift in Sources */,
 				65E6418D1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				52D6D99B1BEFF375002C0205 /* MatrixSDKTests.swift in Sources */,
+				65D147F91E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,
 				6518B6291E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,7 +891,7 @@
 			files = (
 				65E641891E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
 				656FE54F1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
-				656FE5331E5F2D860028B627 /* Session.swift in Sources */,
+				656FE5331E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE64A1E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,7 +902,7 @@
 			files = (
 				65E6418A1E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
 				656FE5501E5F40BB0028B627 /* MXCredentials.swift in Sources */,
-				656FE5341E5F2D860028B627 /* Session.swift in Sources */,
+				656FE5341E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE64B1E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -899,7 +913,7 @@
 			files = (
 				65E641881E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
 				656FE54E1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
-				656FE5321E5F2D860028B627 /* Session.swift in Sources */,
+				656FE5321E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE6491E5F522B0028B627 /* MXError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -913,6 +927,7 @@
 				656FE5A31E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
 				65E6418E1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD7502861C68FDDC006590AF /* MatrixSDKTests.swift in Sources */,
+				65D147FA1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,
 				6518B62A1E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -926,6 +941,7 @@
 				656FE5A41E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
 				65E6418F1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD75029A1C690CBE006590AF /* MatrixSDKTests.swift in Sources */,
+				65D147FB1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,
 				6518B62B1E5FDFFF00B35A34 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

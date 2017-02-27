@@ -35,6 +35,7 @@ public protocol SubTarget {
     var sampleData: Data { get }
     var task: Task { get }
     var parameterEncoding: ParameterEncoding { get }
+    var validate: Bool { get }
 }
 
 struct DynamicTarget: TargetType {
@@ -53,6 +54,7 @@ struct DynamicTarget: TargetType {
     var sampleData: Data { return subTarget.sampleData }
     var task: Task { return subTarget.task }
     var parameterEncoding: ParameterEncoding { return subTarget.parameterEncoding }
+    var validate: Bool { return subTarget.validate }
 }
 
 class DynamicProvider<Target: SubTarget>: MoyaProvider<DynamicTarget> {

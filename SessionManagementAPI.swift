@@ -1,5 +1,5 @@
 /**
- *  Session.swift
+ *  SessionManagementAPI.swift
  *  MatrixSDK
  *
  *  Created by Gustavo Perdomo on 2/23/17.
@@ -27,21 +27,21 @@
 import Foundation
 import Moya
 
-public enum Session {
-    case login(username: String, password: String)
-    case logout()
-    case tokenRefresh()
+public enum SessionManagementAPI {
+    case login(type: String, password: String, username: String?, medium: String?, address: String?)
+    case logout(accessToken: String)
+    case refreshToken(accessToken: String, refreshToken: String)
 }
 
-extension Session: SubTarget {
+extension SessionManagementAPI: SubTarget {
     public var path: String {
         switch self {
-        case .login(_, _):
-            return "/login"
-        case .logout():
-            return "/logout"
-        case .tokenRefresh():
-            return "/tokenrefresh"
+        case .login(_, _, _, _, _):
+            return "/_matrix/client/r0/login"
+        case .logout(let accessToken):
+            return "/_matrix/client/r0/logout?access_token=\(accessToken)"
+        case .refreshToken(let accessToken, _):
+            return "/_matrix/client/r0/tokenrefresh?access_token=\(accessToken)"
         }
     }
     
@@ -51,13 +51,31 @@ extension Session: SubTarget {
     
     public var parameters: [String: Any]? {
         switch self {
-        case .login(let username, let password):
-            return [
-                "user": username,
-                "password": password,
-                "type": "m.login.password"
+        case .login(let type, let password, let username, let medium, let address):
+            var params = [
+                "type": type,
+                "password": password
             ]
-        default: return nil
+            
+            if let u = username {
+                params["user"] = u
+            }
+            
+            if let m = medium {
+                params["medium"] = m
+            }
+            
+            if let a = address {
+                params["address"] = a
+            }
+            
+            return params
+        case .logout(_):
+            return nil
+        case .refreshToken(_, let refreshToken):
+            return [
+                "refresh_token": refreshToken
+            ]
         }
     }
     
@@ -71,6 +89,10 @@ extension Session: SubTarget {
     
     public var parameterEncoding: ParameterEncoding {
         return JSONEncoding.default
+    }
+    
+    public var validate: Bool {
+        return false
     }
 }
 
