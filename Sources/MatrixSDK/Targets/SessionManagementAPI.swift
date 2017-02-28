@@ -44,11 +44,11 @@ extension SessionManagementAPI: SubTarget {
             return "/_matrix/client/r0/tokenrefresh?access_token=\(accessToken)"
         }
     }
-    
+
     public var method: Moya.Method {
         return .post
     }
-    
+
     public var parameters: [String: Any]? {
         switch self {
         case .login(let type, let password, let username, let medium, let address):
@@ -56,19 +56,19 @@ extension SessionManagementAPI: SubTarget {
                 "type": type,
                 "password": password
             ]
-            
+
             if let u = username {
                 params["user"] = u
             }
-            
+
             if let m = medium {
                 params["medium"] = m
             }
-            
+
             if let a = address {
                 params["address"] = a
             }
-            
+
             return params
         case .logout(_):
             return nil
@@ -78,21 +78,20 @@ extension SessionManagementAPI: SubTarget {
             ]
         }
     }
-    
+
     public var sampleData: Data {
         return Data()
     }
-    
+
     public var task: Task {
         return .request
     }
-    
+
     public var parameterEncoding: ParameterEncoding {
         return JSONEncoding.default
     }
-    
+
     public var validate: Bool {
         return false
     }
 }
-

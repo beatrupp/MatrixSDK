@@ -22,7 +22,6 @@
 		656FE54E1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
 		656FE54F1E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
 		656FE5501E5F40BB0028B627 /* MXCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE54C1E5F40BB0028B627 /* MXCredentials.swift */; };
-		656FE5601E5F42DD0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
 		656FE5781E5F49F50028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE53F1E5F38270028B627 /* Alamofire.framework */; };
 		656FE5791E5F49F50028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5381E5F35270028B627 /* Moya.framework */; };
 		656FE57A1E5F49F50028B627 /* MoyaObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5391E5F35270028B627 /* MoyaObjectMapper.framework */; };
@@ -45,8 +44,6 @@
 		656FE5A01E5F4A960028B627 /* Quick.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58E1E5F4A6C0028B627 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		656FE5A11E5F4A960028B627 /* Result.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE58F1E5F4A6C0028B627 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		656FE5A21E5F4A960028B627 /* SwifterSwift.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 656FE5901E5F4A6C0028B627 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		656FE5A31E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
-		656FE5A41E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */; };
 		656FE5D91E5F4B9C0028B627 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE5891E5F4A6C0028B627 /* Alamofire.framework */; };
 		656FE5DA1E5F4B9C0028B627 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58A1E5F4A6C0028B627 /* Moya.framework */; };
 		656FE5DB1E5F4B9C0028B627 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FE58D1E5F4A6C0028B627 /* ObjectMapper.framework */; };
@@ -91,6 +88,13 @@
 		656FE6491E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
 		656FE64A1E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
 		656FE64B1E5F522B0028B627 /* MXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FE6471E5F522B0028B627 /* MXError.swift */; };
+		65BD27D21E65CF1500E90700 /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D11E65CF1500E90700 /* MediaAPI.swift */; };
+		65BD27D31E65CF1500E90700 /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D11E65CF1500E90700 /* MediaAPI.swift */; };
+		65BD27D41E65CF1500E90700 /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D11E65CF1500E90700 /* MediaAPI.swift */; };
+		65BD27D51E65CF1500E90700 /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D11E65CF1500E90700 /* MediaAPI.swift */; };
+		65BD27D71E65DA8F00E90700 /* MediaAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D61E65DA8F00E90700 /* MediaAPISpec.swift */; };
+		65BD27D81E65DA8F00E90700 /* MediaAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D61E65DA8F00E90700 /* MediaAPISpec.swift */; };
+		65BD27D91E65DA8F00E90700 /* MediaAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD27D61E65DA8F00E90700 /* MediaAPISpec.swift */; };
 		65C9998F1E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
 		65C999901E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
 		65C999911E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */; };
@@ -197,7 +201,7 @@
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* MatrixSDK-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MatrixSDK-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatrixSDKTests.swift; path = Tests/MatrixSDKTests/MatrixSDKTests.swift; sourceTree = "<group>"; };
+		52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSDKTests.swift; sourceTree = "<group>"; };
 		52D6D9E21BEFFF6E002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* MatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +213,6 @@
 		656FE53F1E5F38270028B627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		656FE5411E5F3BBB0028B627 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		656FE5421E5F3BBB0028B627 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionEndpointSpec.swift; sourceTree = "<group>"; };
 		656FE54C1E5F40BB0028B627 /* MXCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCredentials.swift; sourceTree = "<group>"; };
 		656FE55B1E5F425D0028B627 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		656FE55D1E5F428A0028B627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 		656FE62C1E5F4D790028B627 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		656FE62D1E5F4D790028B627 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/tvOS/SwifterSwift.framework; sourceTree = "<group>"; };
 		656FE6471E5F522B0028B627 /* MXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXError.swift; sourceTree = "<group>"; };
+		65BD27D11E65CF1500E90700 /* MediaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaAPI.swift; sourceTree = "<group>"; };
+		65BD27D61E65DA8F00E90700 /* MediaAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaAPISpec.swift; sourceTree = "<group>"; };
 		65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCredentialsSpec.swift; sourceTree = "<group>"; };
 		65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagementAPISpec.swift; sourceTree = "<group>"; };
 		65E641861E60AA84002E6A6A /* DynamicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicProvider.swift; sourceTree = "<group>"; };
@@ -380,17 +385,43 @@
 			children = (
 				6518B6281E5FDFFF00B35A34 /* Fixtures.swift */,
 			);
-			name = Fixtures;
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		655618211E6609B5002CE2AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				65E641861E60AA84002E6A6A /* DynamicProvider.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		655618221E6609EA002CE2AC /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */,
+				65BD27D11E65CF1500E90700 /* MediaAPI.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		655618231E660A15002CE2AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				656FE54C1E5F40BB0028B627 /* MXCredentials.swift */,
+				656FE6471E5F522B0028B627 /* MXError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		656FE52C1E5F25380028B627 /* MatrixSDK */ = {
 			isa = PBXGroup;
 			children = (
-				65E641851E60AA4B002E6A6A /* Helpers */,
-				656FE5351E5F2E9F0028B627 /* Targets */,
-				656FE54B1E5F40880028B627 /* Models */,
+				655618211E6609B5002CE2AC /* Helpers */,
+				655618221E6609EA002CE2AC /* Targets */,
+				655618231E660A15002CE2AC /* Models */,
 			);
-			name = MatrixSDK;
+			path = MatrixSDK;
 			sourceTree = "<group>";
 		};
 		656FE52D1E5F258E0028B627 /* Tests */ = {
@@ -398,7 +429,7 @@
 			children = (
 				656FE52F1E5F25AE0028B627 /* MatrixSDK */,
 			);
-			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		656FE52E1E5F25A50028B627 /* Sources */ = {
@@ -406,7 +437,7 @@
 			children = (
 				656FE52C1E5F25380028B627 /* MatrixSDK */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		656FE52F1E5F25AE0028B627 /* MatrixSDK */ = {
@@ -418,14 +449,7 @@
 				52D6D9971BEFF375002C0205 /* MatrixSDKTests.swift */,
 			);
 			name = MatrixSDK;
-			sourceTree = "<group>";
-		};
-		656FE5351E5F2E9F0028B627 /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				656FE5301E5F2D860028B627 /* SessionManagementAPI.swift */,
-			);
-			name = Targets;
+			path = MatrixSDKTests;
 			sourceTree = "<group>";
 		};
 		656FE5371E5F35270028B627 /* Frameworks */ = {
@@ -444,18 +468,8 @@
 			children = (
 				65D147F71E647FD800A11973 /* Targets */,
 				65E6418B1E60B163002E6A6A /* Models */,
-				656FE5451E5F3FB80028B627 /* SessionEndpointSpec.swift */,
 			);
-			name = Specs;
-			sourceTree = "<group>";
-		};
-		656FE54B1E5F40880028B627 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				656FE54C1E5F40BB0028B627 /* MXCredentials.swift */,
-				656FE6471E5F522B0028B627 /* MXError.swift */,
-			);
-			name = Models;
+			path = Specs;
 			sourceTree = "<group>";
 		};
 		656FE5881E5F4A340028B627 /* iOS */ = {
@@ -518,16 +532,9 @@
 			isa = PBXGroup;
 			children = (
 				65D147F81E64806100A11973 /* SessionManagementAPISpec.swift */,
+				65BD27D61E65DA8F00E90700 /* MediaAPISpec.swift */,
 			);
-			name = Targets;
-			sourceTree = "<group>";
-		};
-		65E641851E60AA4B002E6A6A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				65E641861E60AA84002E6A6A /* DynamicProvider.swift */,
-			);
-			name = Helpers;
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		65E6418B1E60B163002E6A6A /* Models */ = {
@@ -536,7 +543,7 @@
 				65E6418C1E60B19C002E6A6A /* MXErrorSpec.swift */,
 				65C9998E1E612FEE00AB8E53 /* MXCredentialsSpec.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		65FAA0591E5F901E005949C4 /* Helpers */ = {
@@ -544,7 +551,7 @@
 			children = (
 				65FAA05A1E5F9036005949C4 /* TestProvider.swift */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -865,6 +872,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E641871E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				65BD27D21E65CF1500E90700 /* MediaAPI.swift in Sources */,
 				656FE54D1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
 				656FE5311E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE6481E5F522B0028B627 /* MXError.swift in Sources */,
@@ -877,7 +885,7 @@
 			files = (
 				65C9998F1E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
 				65FAA05B1E5F9036005949C4 /* TestProvider.swift in Sources */,
-				656FE5601E5F42DD0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65BD27D71E65DA8F00E90700 /* MediaAPISpec.swift in Sources */,
 				65E6418D1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				52D6D99B1BEFF375002C0205 /* MatrixSDKTests.swift in Sources */,
 				65D147F91E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,
@@ -890,6 +898,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E641891E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				65BD27D41E65CF1500E90700 /* MediaAPI.swift in Sources */,
 				656FE54F1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
 				656FE5331E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE64A1E5F522B0028B627 /* MXError.swift in Sources */,
@@ -901,6 +910,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E6418A1E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				65BD27D51E65CF1500E90700 /* MediaAPI.swift in Sources */,
 				656FE5501E5F40BB0028B627 /* MXCredentials.swift in Sources */,
 				656FE5341E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE64B1E5F522B0028B627 /* MXError.swift in Sources */,
@@ -912,6 +922,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E641881E60AA84002E6A6A /* DynamicProvider.swift in Sources */,
+				65BD27D31E65CF1500E90700 /* MediaAPI.swift in Sources */,
 				656FE54E1E5F40BB0028B627 /* MXCredentials.swift in Sources */,
 				656FE5321E5F2D860028B627 /* SessionManagementAPI.swift in Sources */,
 				656FE6491E5F522B0028B627 /* MXError.swift in Sources */,
@@ -924,7 +935,7 @@
 			files = (
 				65C999901E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
 				65FAA05C1E5F9036005949C4 /* TestProvider.swift in Sources */,
-				656FE5A31E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65BD27D81E65DA8F00E90700 /* MediaAPISpec.swift in Sources */,
 				65E6418E1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD7502861C68FDDC006590AF /* MatrixSDKTests.swift in Sources */,
 				65D147FA1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,
@@ -938,7 +949,7 @@
 			files = (
 				65C999911E612FEE00AB8E53 /* MXCredentialsSpec.swift in Sources */,
 				65FAA05D1E5F9036005949C4 /* TestProvider.swift in Sources */,
-				656FE5A41E5F4ABB0028B627 /* SessionEndpointSpec.swift in Sources */,
+				65BD27D91E65DA8F00E90700 /* MediaAPISpec.swift in Sources */,
 				65E6418F1E60B19C002E6A6A /* MXErrorSpec.swift in Sources */,
 				DD75029A1C690CBE006590AF /* MatrixSDKTests.swift in Sources */,
 				65D147FB1E64806100A11973 /* SessionManagementAPISpec.swift in Sources */,

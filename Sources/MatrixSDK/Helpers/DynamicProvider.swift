@@ -41,13 +41,13 @@ public protocol SubTarget {
 struct DynamicTarget: TargetType {
     let baseURL: URL
     let subTarget: SubTarget
-    
+
     /// Initialize a SingleURLTarget
     init(baseUrl: URL, subTarget: SubTarget) {
         self.baseURL = baseUrl
         self.subTarget = subTarget
     }
-    
+
     var path: String { return subTarget.path}
     var method: Moya.Method { return subTarget.method}
     var parameters: [String: Any]? { return subTarget.parameters }
@@ -59,17 +59,17 @@ struct DynamicTarget: TargetType {
 
 class DynamicProvider<Target: SubTarget>: MoyaProvider<DynamicTarget> {
     let baseUrl: URL
-    
+
     public init(baseUrl: URL, endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
                 requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
                 stubClosure: @escaping StubClosure = MoyaProvider.neverStub,
                 plugins: [PluginType] = [],
                 trackInflights: Bool = false) {
         self.baseUrl = baseUrl
-        
+
         super.init(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, plugins: plugins, trackInflights: trackInflights)
     }
-    
+
     // add initializer to take `baseUrl` and call super with the rest of the arguments
     func request(_ subTarget: Target, completion: @escaping ((Result<Response, MoyaError>) -> Void)) {
         let dynamicTarget = DynamicTarget(baseUrl: baseUrl, subTarget: subTarget)

@@ -1,5 +1,5 @@
 /**
- *  MXCredentials.swift
+ *  MXError.swift
  *  MatrixSDK
  *
  *  Created by Gustavo Perdomo on 2/23/17.
@@ -27,39 +27,58 @@
 import Foundation
 import ObjectMapper
 
-/// Represents the response to a login or a register request
-public struct MXCredentials: Mappable {
+public enum MXErrorCode: String, RawRepresentable {
+    case unknown = "M_UNKNOWN"
+    case forbidden = "M_FORBIDDEN"
+    case unknownToken = "M_UNKNOWN_TOKEN"
+    case badJSON = "M_BAD_JSON"
+    case notJSON = "M_NOT_JSON"
+    case notFOUND = "M_NOT_FOUND"
+    case limitExceeded = "M_LIMIT_EXCEEDED"
+    case userInUSE = "M_USER_IN_USE"
+    case invalidUsername = "M_INVALID_USERNAME"
+    case roomInUse = "M_ROOM_IN_USE"
+    case badPagination = "M_BAD_PAGINATION"
+
+    case threePidInUse = "M_THREEPID_IN_USE"
+    case threePidNotFound = "M_THREEPID_NOT_FOUND"
+    case serverNotTrusted = "M_SERVER_NOT_TRUSTED"
+}
+
+/// Represents a Error response
+public struct MXError: Mappable, Error {
     // MARK: Properties
-    
-    /// An access token for the account.
-    /// This access token can then be used to authorize other requests.
-    public private(set) var accessToken: String!
-    
-    /// The hostname of the homeserver on which the account has been registered.
-    public private(set) var homeserver: String?
-    
-    /// A refresh_token may be exchanged for a new access_token using the /tokenrefresh API endpoint.
-    public private(set) var refreshToken: String?
-    
-    /// The fully-qualified Matrix ID that has been registered.
-    public private(set) var userId: String?
-    
-    /// The device id.
-    public private(set) var deviceId: String?
-    
+
+    /// The error code
+    public private(set) var code: MXErrorCode!
+
+    /// The error message
+    public private(set) var error: String?
+
+    public init(code: String, error: String? = nil) {
+        self.code = MXErrorCode(rawValue: code)
+        self.error = error
+    }
+
+    public init(code: MXErrorCode, error: String? = nil) {
+        self.code = code
+        self.error = error
+    }
+
     // MARK: Mappable
-    
+
     public init?(map: Map) {
-        if map.JSON["access_token"] == nil {
+        if map.JSON["errcode"] == nil {
             return nil
         }
     }
-    
+
     public mutating func mapping(map: Map) {
-        accessToken <- map["access_token"]
-        homeserver <- map["home_server"]
-        refreshToken <- map["refresh_token"]
-        userId <- map["user_id"]
-        deviceId <- map["device_id"]
+        code <- map["errcode"]
+        error <- map["error"]
+    }
+
+    public var description: String {
+        return "\(code) - \(error)"
     }
 }
